@@ -73,7 +73,15 @@ const Test1 = () => {
             </div>
 
             <Table columns={columns}
-                dataSource={searchData} /></div>
+                dataSource={searchData} />
+                <button onClick={() => {
+                localStorage.clear();
+                window.location.reload();
+            }}>Logout</button>
+            
+                </div>
+                
     )
+    
 }
 export default Test1;

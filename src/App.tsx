@@ -1,26 +1,17 @@
-import React from 'react';
+
 import logo from './logo.svg';
 import './App.css';
-
+import React, { useState } from "react";
+import { Table, Tag, Button, TableProps } from "antd"; // Assuming you're using Ant Design Table
+import { isEditable } from "@testing-library/user-event/dist/utils";
+import Introduction from './components/Requirement1';
+import Api from './components/Requirement12';
+import Dashboard from './layouts/dashboard';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Api/>
     </div>
   );
 }
-
 export default App;

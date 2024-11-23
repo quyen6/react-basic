@@ -1,0 +1,15 @@
+.list-user-content {
+    margin-top: 30px;
+
+    .child {
+        width: 400px;
+        height: 40px;
+        border: 1px solid;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .child:not(:first-child) {
+        border-top: none;
+    }
+}
